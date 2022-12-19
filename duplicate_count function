@@ -1,0 +1,10 @@
+def duplicate_count(text):
+    import collections
+
+    text_lower=text.lower();
+    counter = collections.Counter(text_lower);
+    result=0;
+    for i in counter.items():
+     if i[1]>1:
+         result+=1;
+    return result;
