@@ -1,0 +1,11 @@
+def alphabet_position(text):
+    text=text.replace(' ', '')
+    text=text.lower();
+    text=list(text);
+    text=''.join([a for a in text if a.isalpha()]) # get rid of signs. leaving only the letters 
+    list_of_numbers=[]
+    for letter in text:
+        number= ord(letter)-96; #getting the alphabetical number 
+        list_of_numbers.append(number);
+    result= ' '.join(str(x) for x in list_of_numbers); # converting to string 
+    return result
