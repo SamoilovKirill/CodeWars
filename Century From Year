@@ -1,0 +1,15 @@
+def century(year):
+    List_of_digits=[]
+    for i in str(year):
+        List_of_digits.append(i)
+    if len(List_of_digits)==4:
+        if int(List_of_digits[2] + List_of_digits[3])==0:
+            result=int(List_of_digits[0]+(List_of_digits[1]))
+        else:
+             result=int(List_of_digits[0]+(List_of_digits[1]))+1
+    elif len(List_of_digits)==3:
+        result=int(List_of_digits[0])+1;
+    else:
+         result=1;
+                         
+    return result
