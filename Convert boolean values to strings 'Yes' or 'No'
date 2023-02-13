@@ -1,0 +1,6 @@
+def bool_to_word(boolean):
+    if boolean==True:
+        result="Yes";
+    else:
+        result="No";
+    return result 
