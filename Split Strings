@@ -1,0 +1,9 @@
+def solution(s):
+    i=0;
+    result=[]
+    if len(s) %2!=0:
+        s+='_'
+    while i<len(s):
+        result.append(s[i]+s[i+1])
+        i+=2
+    return result
